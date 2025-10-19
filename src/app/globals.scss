@@ -214,10 +214,25 @@ header {
 .header-logo {
   font-size: var(--font-size-paragraph-l);
   font-weight: var(--font-weight-semibold);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
 
   svg {
     width: 50px;
     height: 50px;
+  }
+
+  img {
+    display: block;
   }
 
   a {
